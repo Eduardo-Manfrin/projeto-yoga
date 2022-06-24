@@ -1,7 +1,27 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap');
+
+@font-face {
+    font-family: 'escrita';
+    src: url(../fontes/Best\ Valentina\ TTF.ttf) format('truetype');
+    font-weight: normal;
+}
+
+:root {
+    --font-titulo: 'escrita', Arial, sans-serif;
+    --font-texto: 'Merienda', 'cursive', Arial, sans-serif;
+
+
+
+}
 
 *{
     padding: 0px;
     margin: 0px;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
 }
