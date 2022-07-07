@@ -11,9 +11,13 @@
 :root {
     --font-titulo: 'escrita', Arial, sans-serif;
     --font-texto: 'Merienda', 'cursive', Arial, sans-serif;
-
-
-
+    --color1: #E8B533;
+    --color2: #F2AA35;
+    --color3: #DB883B;
+    --color4: #F27535;
+    --color5: #E85633;
+    --color-fonte1: #118200;
+    --color-fonte2: #855A38;
 }
 
 *{
@@ -24,4 +28,5 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     color: black;
+    background-image: linear-gradient(to right, #e8b533c9,#e85733b2 );
 }
