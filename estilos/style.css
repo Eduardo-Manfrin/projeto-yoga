@@ -11,13 +11,13 @@
 :root {
     --font-titulo: 'escrita', Arial, sans-serif;
     --font-texto: 'Merienda', 'cursive', Arial, sans-serif;
-    --color1: #E8B533;
-    --color2: #F2AA35;
-    --color3: #DB883B;
-    --color4: #F27535;
-    --color5: #E85633;
-    --color-fonte1: #118200;
-    --color-fonte2: #855A38;
+    --color1: #855A38;
+    --color2: #AD5F42;
+    --color3: #FA9A77;
+    --color4: #BCFA91;
+    --color5: #3f7936;
+    --color-fonte1: #5F74FA;
+    --color-fonte2: #4B58AD;
 }
 
 *{
@@ -28,5 +28,214 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     color: black;
-    background-image: linear-gradient(to right, #e8b533c9,#e85733b2 );
+    background-color: var(--color3);
+}
+header{
+    height: max-content;
+    width: 1000px;
+    text-align: center;
+    margin: auto;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.562);
+    overflow: hidden;
+    background-image: url(../fotos/foto-madeira.jpg);
+    background-size: cover;
+    color: var(--color-fonte1);
+    position: relative;
+    margin-bottom: 10px;
+}
+header > h1{
+    font-family: var(--font-titulo);
+    text-shadow: 1px 1px 2px black;
+    font-size: 50px;
+}
+#menu > li{
+    font-family: var(--font-texto);
+    float: left;
+    list-style-type: none;
+    margin: 0px 0px 5px 5px;
+    background-color: var(--color1);
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.384);
+    border-radius: 2px;
+    padding: 5px;
+    color: white;
+}
+main{
+    clear: left;
+    width: 1000px;
+    margin: auto;
+    
+}
+
+.container{
+    background-color: var(--color1);
+    height: 430px;
+    box-shadow: inset 0px 0px 5px 2px rgba(0, 0, 0, 0.459);
+    border-radius: 10px;
+    position: relative;
+    margin-bottom: 10px;
+}
+#fotos{
+    background-color: white;
+    background-image: url(../fotos/pessoa-yoga1.jpg);
+    background-size: 100% 112%;
+    background-position: center;
+    position: relative;
+    height: 410px;
+    width: 980px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+}
+#transparente{
+    font-family: var(--font-texto);
+    font-size: 30px;
+    background-color: rgba(255, 255, 255, 0.452);
+    float: left;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+section{
+    background-image: linear-gradient(to right, var(--color1), var(--color3));
+    box-shadow: inset 0px 0px 5px 2px rgba(0, 0, 0, 0.459);
+    border-radius:10px;
+    width: 1000px;
+}
+.conteudo{
+    font-family: var(--font-texto), Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+    height: 161px;
+    width: 252px;
+    position: relative;
+    left: 2%;
+    transform: translate(-3%, 8%);
+}
+.linkaula{
+    text-decoration: none;
+    color: black;
+}
+#foto-ju01{
+    height: 140px;
+    border: 1px solid black;
+}
+article{
+    margin: 20px 10px 0px 10px;
+}
+article > h1 {
+    text-transform: uppercase;
+    font-family: var(--font-texto);
+    text-align: center;
+    font-size: 1.9em;
+    color: var(--color-fonte2);
+    text-shadow: 1px 1px 2px black;
+}
+article > p{
+    color: white;
+    font-family: var(--font-texto);
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 20px; 
+    margin-bottom: 10px;
+}
+article > h2{
+    font-family: var(--font-texto);
+    padding: 4px;
+}
+#fotofixa{
+    background-image: url(../fotos/fotofixa.jpg);
+    background-size: 100% 100%;
+    width: 900px;
+    height: 400px;
+    margin: auto;
+    background-attachment: fixed;
+    background-position: center center;
+    box-shadow: inset 0px 0px 4px 1px rgba(0, 0, 0, 0.445);
+    border-radius: 3px;
+}
+#divtransparente{
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0.377);
+    float: right;
+    padding: 10px;
+    margin: 10px;
+}
+aside > div > h3{
+    font-family: var(--font-texto);
+    color: var(--color-fonte1);
+}
+aside > div > ul{
+    font-family: var(--font-texto);
+    list-style-type: none;
+    font-size: 0.8em;
+}
+aside > div > p{
+    font-family: var(--font-texto);
+    font-size: 16.5px;
+}
+#ultimo > h2{
+    font-family: var(--font-texto);
+    text-align: center;
+    font-size: 1.9em;
+    color: var(--color-fonte2);
+    text-shadow: 1px 1px 2px black;
+    margin-top: 10px;
+}
+#ultimo > p{
+    color: white;
+    font-family: var(--font-texto);
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 20px; 
+    margin: 10px 20px 5px 20px;
+}
+#ultimo > dl > dt{
+    font-family: var(--font-titulo);
+    color: white;
+    font-size: 1.8em;
+    margin: 5px;
+}
+dd{
+    font-family: var(--font-texto);
+    font-size: bold;
+    margin: 3px;
+    text-indent: 30px;
+}
+footer{background-image: url(../fotos/foto-madeira.jpg);
+    background-size: cover;
+    width: 1000px;
+    text-align: center;
+    margin: auto;
+    overflow: hidden;
+    box-shadow: 0px 0px 6px 2px rgb(0 0 0 / 56%);
+    margin-top: 20px;
+}
+#footer > li{
+    font-family: var(--font-texto);
+    float: left;
+    list-style-type: none;
+    margin: 5px 0px 5px 5px;
+    background-color: var(--color1);
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.384);
+    border-radius: 2px;
+    padding: 5px;
+    color: white;
+}
+footer > p{
+    clear: left;
+    background-color: var(--color1);
+    border-radius: 2px;
+    color: white;
+    display: inline-block;
+    padding: 3px;
+}
+footer > p > a{
+    text-decoration: none;
+    color: var(--color-fonte1);
+    font-weight: bold;
+    text-shadow: 1px 1px 2px black;
 }
