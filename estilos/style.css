@@ -29,10 +29,10 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     color: black;
     background-color: var(--color3);
+    font-size: 15px;
 }
 header{
     height: max-content;
-    width: 1000px;
     text-align: center;
     margin: auto;
     border-radius: 0px 0px 10px 10px;
@@ -43,11 +43,16 @@ header{
     color: var(--color-fonte1);
     position: relative;
     margin-bottom: 10px;
+    min-height: 200px;
 }
 header > h1{
     font-family: var(--font-titulo);
     text-shadow: 1px 1px 2px black;
-    font-size: 50px;
+    font-size: 3.5em;
+    margin: auto;
+}
+#header{
+    min-width: 400px;
 }
 #menu > li{
     font-family: var(--font-texto);
@@ -59,12 +64,15 @@ header > h1{
     border-radius: 2px;
     padding: 5px;
     color: white;
+    font-size: 1.2em;
+    position: relative;
+    top: 60px;
 }
 main{
     clear: left;
-    width: 1000px;
-    margin: auto;
-    
+    margin: auto; 
+    min-height: 280px;
+    max-width: 1000px;
 }
 
 .container{
@@ -102,7 +110,10 @@ section{
     background-image: linear-gradient(to right, var(--color1), var(--color3));
     box-shadow: inset 0px 0px 5px 2px rgba(0, 0, 0, 0.459);
     border-radius:10px;
-    width: 1000px;
+    width: 100vh;
+    margin: auto;
+    position: static;
+    
 }
 .conteudo{
     font-family: var(--font-texto), Arial, Helvetica, sans-serif;
@@ -156,6 +167,7 @@ article > h2{
     background-position: center center;
     box-shadow: inset 0px 0px 4px 1px rgba(0, 0, 0, 0.445);
     border-radius: 3px;
+    position: relative;
 }
 #divtransparente{
     width: 400px;
@@ -201,13 +213,13 @@ aside > div > p{
 }
 dd{
     font-family: var(--font-texto);
-    font-size: bold;
+    font-style: bold;
     margin: 3px;
     text-indent: 30px;
 }
 footer{background-image: url(../fotos/foto-madeira.jpg);
     background-size: cover;
-    width: 1000px;
+    idth: 1000px;
     text-align: center;
     margin: auto;
     overflow: hidden;
