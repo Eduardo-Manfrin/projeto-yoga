@@ -94,15 +94,16 @@ section{
     background-image: linear-gradient(to right, var(--color1), var(--color3));
     box-shadow: inset 0px 0px 5px 2px rgba(0, 0, 0, 0.459);
     border-radius:10px;
+    padding: 20px 10px
 }
 .conteudo{
     font-family: var(--font-texto), Arial, Helvetica, sans-serif;
     font-weight: bold;
     color: black;
-    
-}
-.conteudo > a > p{
+    width: max-content;
     text-align: center;
+    background-color: rgba(0, 0, 0, 0.205);
+    padding: 3px 10px 10px 10px;
 }
 .linkaula{
     text-decoration: none;
@@ -121,7 +122,7 @@ article > h1 {
     text-align: center;
     font-size: 1.9em;
     color: var(--color-fonte2);
-    text-shadow: 1px 1px 2px black;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.603);
 }
 article > p{
     color: white;
@@ -138,20 +139,20 @@ article > h2{
 #fotofixa{
     background-image: url(../fotos/fotofixa.jpg);
     background-size: 100% 100%;
-    width: 900px;
-    height: 400px;
-    margin: auto;
+    max-width: 90vw;
     background-attachment: fixed;
     background-position: center center;
     box-shadow: inset 0px 0px 4px 1px rgba(0, 0, 0, 0.445);
     border-radius: 3px;
+    padding: 30px 0px;
 }
 #divtransparente{
-    width: 400px;
     background-color: rgba(255, 255, 255, 0.377);
-    float: right;
+    max-width: max-content;
+    display: block;
     padding: 10px;
-    margin: 10px;
+    margin: 0px 30px 0px 30px;
+    font-size: 1.5em;
 }
 aside > div > h3{
     font-family: var(--font-texto);
@@ -226,4 +227,18 @@ footer > p > a{
     color: var(--color-fonte1);
     font-weight: bold;
     text-shadow: 1px 1px 2px black;
+}
+/*PÁGINA 01 (Inscreva-se)*/
+
+
+/*PÁGINA 02 (VÍDEOS)*/
+
+
+/*PÁGINA 03 (SOBREMIM)*/
+.sobremim{
+    text-align: center;
+}
+#fotoperfil{
+    border: 1px solid black;
+    max-width: 400px;
 }
