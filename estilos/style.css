@@ -67,7 +67,6 @@ main{
 
 .container{
     background-color: var(--color1);
-    eight: 430px;
     box-shadow: inset 0px 0px 5px 2px rgba(0, 0, 0, 0.459);
     border-radius: 10px;
     margin-bottom: 10px;
