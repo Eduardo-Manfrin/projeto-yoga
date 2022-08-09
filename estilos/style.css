@@ -44,7 +44,7 @@ header{
 header > h1{
     font-family: var(--font-titulo);
     text-shadow: 1px 1px 2px black;
-    font-size: 7vw;
+    font-size: 4em;
     margin: auto;
 }
 #menu > li{
@@ -67,15 +67,29 @@ main{
     background-color: var(--color1);
     box-shadow: inset 0px 0px 5px 2px rgba(0, 0, 0, 0.459);
     border-radius: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 10px; 
+    max-width: 100vw;
+    width: 1000px;
+    position: relative;
+    padding-bottom: 56%;
 }
-.container > div{
-
+#foto img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 97%;
+    height: 97%;
+    border-radius: 5px;
 }
-main img{
-    width: 100%;
+#ptransparente{
+    background-color: rgba(255, 255, 255, 0.397);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2em;
 }
-
 section{
     background-image: linear-gradient(to right, var(--color1), var(--color3));
     box-shadow: inset 0px 0px 5px 2px rgba(0, 0, 0, 0.459);
@@ -84,10 +98,11 @@ section{
 .conteudo{
     font-family: var(--font-texto), Arial, Helvetica, sans-serif;
     font-weight: bold;
-    text-align: center;
     color: black;
-    height: 161px;
-    width: 252px;
+    
+}
+.conteudo > a > p{
+    text-align: center;
 }
 .linkaula{
     text-decoration: none;
