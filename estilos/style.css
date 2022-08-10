@@ -47,7 +47,7 @@ header > h1{
     font-size: 4em;
     margin: auto;
 }
-#menu > li{
+#menu > a{
     font-family: var(--font-texto);
     float: left;
     list-style-type: none;
@@ -57,6 +57,12 @@ header > h1{
     border-radius: 2px;
     padding: 5px;
     color: white;
+    text-decoration: none;
+}
+#menu > a:hover{
+    text-decoration: none;
+    background-color: #4d3320;
+    transition-duration: 2s;
 }
 main{
     margin: auto;
@@ -229,7 +235,32 @@ footer > p > a{
     text-shadow: 1px 1px 2px black;
 }
 /*PÁGINA 01 (Inscreva-se)*/
-
+#inscrever{
+    height: 100vh;
+}
+#inscricao{
+    max-width: 230px;
+    background-color: #c0c0c0bb;
+    padding: 20px;
+    margin: auto;
+}
+#inscricao > h1{
+    text-align: center;
+    color: var(--color-fonte1);
+    text-shadow: 0px 0px 20px black;
+}
+input{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid black;
+    margin-bottom: 10px;
+}
+input[type="submit"]{
+    color: white;
+    background-color: var(--color-fonte1);
+    font-weight: bold;
+}
 
 /*PÁGINA 02 (VÍDEOS)*/
 
